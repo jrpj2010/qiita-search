@@ -1,0 +1,5 @@
+{
+  "name": "勝Qiitaサーチ",
+  "description": "Qiitaの記事を効率的に検索・ソートするためのツール。大量の記事を取得し、公開日や「いいね」数で並び替え、上位のURLを簡単にコピーできます。",
+  "requestFramePermissions": []
+}

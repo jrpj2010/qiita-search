@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>勝Qiitaサーチ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* For custom scrollbar aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #2d3748; /* gray-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568; /* gray-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #718096; /* gray-500 */
+      }
+    </style>
+    <!-- Add Babel to transpile JSX and TS on the fly -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+    <!-- Change script type to text/babel for on-the-fly transpilation -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+  </body>
+</html>

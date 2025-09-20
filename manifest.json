@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "勝Qiitaサーチ",
+  "description": "Qiitaの記事を効率的に検索・ソートするためのツール。大量の記事を取得し、公開日や「いいね」数で並び替え、上位のURLを簡単にコピーできます。",
+  "version": "1.0",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": [
+    "https://qiita.com/api/v2/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "勝Qiitaサーチを開く"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  }
+}
